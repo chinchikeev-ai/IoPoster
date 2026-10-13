@@ -3,45 +3,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#050505">
+  <meta name="theme-color" content="#0B0E13">
+  <meta name="color-scheme" content="dark">
   <meta name="description" content="IOPOSTER.RU — мобильная Digital Signage платформа: 360° реклама, AI-консультант, навигация и автономная уборка.">
-  <title>IOPOSTER.RU — Digital Media Robot</title>
+  <title>IOPOSTER.RU — реклама, которая движется к аудитории</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" href="/favicon.ico?v=20261013" sizes="any">
   <link rel="shortcut icon" href="/favicon.ico?v=20261013">
-  <link rel="stylesheet" href="styles.css?v=mobile-hero-20261013">
-  <link rel="stylesheet" href="mobile.css?v=mobile-proportions-20261013">
+  <link rel="stylesheet" href="styles.css?v=git-20261013-r1">
+  <link rel="stylesheet" href="mobile.css?v=git-20261013-r1">
 </head>
 <body>
-  <header class="topbar">
-    <a class="logo brand-logo" href="#top" aria-label="IOPOSTER.RU">IOPOSTER.RU</a>
-    <nav id="site-nav" aria-label="Разделы сайта">
+  <header class="topbar" id="site-header">
+    <a class="logo" href="#top" aria-label="IOPOSTER.RU — на главную">IOPOSTER.RU</a>
+    <nav class="site-nav" id="primary-menu" aria-label="Основная навигация">
       <a href="#product">Продукт</a>
-      <a href="#functions">Функции</a>
+      <a href="#functions">Возможности</a>
       <a href="#specs">Характеристики</a>
       <a href="#platform">Платформа</a>
       <a href="#investors">Инвесторам</a>
-      <a class="mobile-pilot" href="#pilot">Обсудить пилот</a>
+      <a href="#pilot">Контакты</a>
     </nav>
-    <a class="pill" href="#pilot">Обсудить пилот</a>
-    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Открыть меню" title="Меню"><span class="menu-open-icon" aria-hidden="true">&#9776;</span><span class="menu-close-icon" aria-hidden="true">&#215;</span></button>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="primary-menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <img class="hero-photo" src="images/ioledposter-product.png" alt="Робот IOPOSTER.RU с горным пейзажем на LED-экранах" width="1672" height="941" fetchpriority="high">
       <div class="hero-copy reveal">
-        <h1>Реклама, которая<br><em>движется к аудитории.</em></h1>
-        <p>360° Digital Signage, AI‑консультант, навигация и автономная уборка — в одном мобильном устройстве.</p>
+        <h1 id="hero-title"><span>Реклама,</span><br><em>которая движется<br>к аудитории.</em></h1>
+        <p class="hero-description">360° Digital Signage, AI-консультант, навигация и автономная уборка — в одном мобильном устройстве.</p>
         <div class="actions">
-          <a class="btn light" href="#product">Смотреть продукт</a>
-          <a class="btn ghost" href="#specs">Характеристики</a>
-          <a class="btn ghost" href="#investors">Инвесторам</a>
+          <a class="btn glass-btn" href="#product"><span>Смотреть продукт</span><span aria-hidden="true" class="arrow">→</span></a>
         </div>
-      </div>
-      <div class="hero-meta">
-        <div><strong>360°</strong><span>4 LED‑стороны</span></div>
-        <div><strong>1920</strong><span>мм высота</span></div>
-        <div><strong>640 × 640</strong><span>мм основание</span></div>
       </div>
     </section>
 
@@ -88,7 +86,7 @@
           <div class="assistant-top">AI‑консультант <span>● ONLINE</span></div>
           <div class="assistant-face">AI</div>
           <div class="assistant-bubble">Чем могу помочь?</div>
-          <button>Найти магазин</button><button>Акции и скидки</button><button>Рестораны и кафе</button><button>Сервисы</button>
+          <div class="assistant-option">Найти магазин</div><div class="assistant-option">Акции и скидки</div><div class="assistant-option">Рестораны и кафе</div><div class="assistant-option">Сервисы</div>
         </div>
       </div>
     </section>
@@ -139,7 +137,7 @@
       <div class="dashboard reveal delay">
         <div class="side"><strong>IO</strong><i></i><i></i><i></i><i></i></div>
         <div class="dash-content">
-          <div class="dash-title">Fleet overview <span>LIVE</span></div>
+          <div class="dash-title">Пример интерфейса <span>ДЕМО</span></div>
           <div class="kpis"><div><small>Устройства</small><b>24</b></div><div><small>Онлайн</small><b>23</b></div><div><small>Кампании</small><b>18</b></div><div><small>Показы</small><b>84.2K</b></div></div>
           <div class="map"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><div class="route"></div></div>
         </div>
@@ -166,12 +164,12 @@
         <div class="kicker">PILOT READY</div>
         <h2>Новый формат retail media<br>в вашем пространстве.</h2>
         <p>Торговые центры · бизнес‑центры · аэропорты · вокзалы · отели · выставки</p>
-        <a class="btn light" href="https://ledcloud.ru" target="_blank" rel="noopener">Связаться с LEDSouz</a>
+        <a class="btn glass-btn glass-btn--compact" href="https://ledcloud.ru" target="_blank" rel="noopener"><span>Связаться с LEDSouz</span><span aria-hidden="true" class="arrow">→</span></a>
       </div>
     </section>
   </main>
 
-  <footer><a class="logo brand-logo" href="#top" aria-label="IOPOSTER.RU">IOPOSTER.RU</a><p>Digital Media Robot by LEDSouz</p><p>© 2026</p></footer>
-  <script src="script.js?v=mobile-hero-20261013"></script>
+  <footer><a class="logo" href="#top">IOPOSTER.RU</a><p>Digital Media Robot by LEDSouz</p><p>© 2026</p></footer>
+  <script src="script.js?v=git-20261013-r1"></script>
 </body>
 </html>
