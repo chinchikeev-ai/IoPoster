@@ -3,54 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#050505">
+  <meta name="theme-color" content="#0B0E13">
+  <meta name="color-scheme" content="dark">
   <meta name="description" content="IO Poster — мобильная Digital Signage платформа: 360° реклама, AI-консультант, навигация и автономная уборка.">
-  <title>IO Poster — Digital Media Robot</title>
+  <title>IOPOSTER.RU — реклама, которая движется к аудитории</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="logo" href="#top"><span>IO</span> POSTER</a>
-    <nav>
+  <header class="topbar" id="site-header">
+    <a class="logo" href="#top" aria-label="IOPOSTER.RU — на главную">IOPOSTER.RU</a>
+    <nav class="site-nav" id="primary-menu" aria-label="Основная навигация">
       <a href="#product">Продукт</a>
-      <a href="#functions">Функции</a>
+      <a href="#functions">Возможности</a>
       <a href="#specs">Характеристики</a>
       <a href="#platform">Платформа</a>
+      <a href="#pilot">Контакты</a>
     </nav>
-    <a class="pill" href="#pilot">Обсудить пилот</a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="primary-menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy reveal">
-        <div class="kicker">DIGITAL MEDIA ROBOT</div>
-        <h1>Реклама, которая<br><em>движется к аудитории.</em></h1>
-        <p>360° Digital Signage, AI‑консультант, навигация и автономная уборка — в одном мобильном устройстве.</p>
+        <p class="eyebrow">IO POSTER / DIGITAL MEDIA ROBOT</p>
+        <h1 id="hero-title"><span>Реклама,</span><br><em>которая движется<br>к аудитории.</em></h1>
+        <p class="hero-description">360° Digital Signage, AI-консультант, навигация и автономная уборка — в одном мобильном устройстве.</p>
         <div class="actions">
-          <a class="btn light" href="#product">Смотреть продукт</a>
-          <a class="btn ghost" href="#specs">Характеристики</a>
+          <a class="btn glass-btn" href="#product"><span>Смотреть продукт</span><span aria-hidden="true" class="arrow">↗</span></a>
         </div>
       </div>
       <div class="hero-product reveal delay">
-        <div class="person"><i></i><b></b><small>1800 мм</small></div>
-        <div class="pylon pylon-large">
-          <div class="cap"><span></span></div>
-          <div class="screen">
-            <div class="screen-glow"></div>
-            <div class="screen-logo">IO POSTER</div>
-            <div class="screen-copy">AI · MEDIA<br>ROBOT</div>
-            <div class="mountain"></div>
+        <div class="product-stage" role="img" aria-label="IO Poster — мобильный четырёхсторонний робот с экранами">
+          <div class="stage-light stage-light--left"></div>
+          <div class="stage-light stage-light--right"></div>
+          <div class="robot">
+            <div class="robot-top"><span class="robot-camera"></span><span class="robot-top-sensors"></span></div>
+            <div class="robot-display">
+              <div class="robot-face robot-face--left"><span class="robot-face-image"></span></div>
+              <div class="robot-face robot-face--right"><span class="robot-face-image"></span></div>
+              <span class="robot-seam"></span>
+            </div>
+            <div class="robot-base">
+              <div class="robot-base-face robot-base-face--left"><span class="robot-vent"></span></div>
+              <div class="robot-base-face robot-base-face--right"><span class="robot-vent"></span></div>
+              <div class="robot-lightring"></div>
+              <div class="robot-wheel robot-wheel--left"></div><div class="robot-wheel robot-wheel--right"></div>
+            </div>
           </div>
-          <div class="base">
-            <div class="sensor"></div><div class="led"></div>
-            <span class="brush l"></span><span class="brush r"></span>
-          </div>
+          <div class="stage-reflection"></div>
         </div>
-      </div>
-      <div class="hero-meta">
-        <div><strong>360°</strong><span>4 LED‑стороны</span></div>
-        <div><strong>1920</strong><span>мм высота</span></div>
-        <div><strong>640 × 640</strong><span>мм основание</span></div>
       </div>
     </section>
 
@@ -154,7 +160,7 @@
       <div class="dashboard reveal delay">
         <div class="side"><strong>IO</strong><i></i><i></i><i></i><i></i></div>
         <div class="dash-content">
-          <div class="dash-title">Fleet overview <span>LIVE</span></div>
+          <div class="dash-title">Пример интерфейса <span>ДЕМО</span></div>
           <div class="kpis"><div><small>Устройства</small><b>24</b></div><div><small>Онлайн</small><b>23</b></div><div><small>Кампании</small><b>18</b></div><div><small>Показы</small><b>84.2K</b></div></div>
           <div class="map"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><div class="route"></div></div>
         </div>
@@ -167,12 +173,12 @@
         <div class="kicker">PILOT READY</div>
         <h2>Новый формат retail media<br>в вашем пространстве.</h2>
         <p>Торговые центры · бизнес‑центры · аэропорты · вокзалы · отели · выставки</p>
-        <a class="btn light" href="https://ledcloud.ru" target="_blank" rel="noopener">Связаться с LEDSouz</a>
+        <a class="btn glass-btn glass-btn--compact" href="https://ledcloud.ru" target="_blank" rel="noopener"><span>Связаться с LEDSouz</span><span aria-hidden="true" class="arrow">↗</span></a>
       </div>
     </section>
   </main>
 
-  <footer><a class="logo" href="#top"><span>IO</span> POSTER</a><p>Digital Media Robot by LEDSouz</p><p>© 2026</p></footer>
+  <footer><a class="logo" href="#top">IOPOSTER.RU</a><p>Digital Media Robot by LEDSouz</p><p>© 2026</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
