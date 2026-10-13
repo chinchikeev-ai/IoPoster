@@ -251,8 +251,8 @@ h2 {font-weight:300;letter-spacing:-.052em;line-height:1.15}
 .assistant-top span {font-size:10px;letter-spacing:.08em;color:#9baeb1}
 .assistant-face {display:grid;place-items:center;width:118px;height:118px;border-radius:50%;margin:38px auto 22px;background:radial-gradient(circle at 40% 30%,#c8d3e7,#7e93b4 47%,#2d405d);font-size:33px;color:#eff3ff}
 .assistant-bubble {font-size:21px;font-weight:300;text-align:center;margin-bottom:27px}
-.assistant-card button {width:100%;text-align:left;color:#e7e8eb;font-size:14px;font-weight:300;background:rgba(255,255,255,.065);border:1px solid rgba(255,255,255,.17);border-radius:13px;margin-top:9px;padding:13px 15px;transition:background .2s}
-.assistant-card button:hover {background:rgba(255,255,255,.12)}
+.assistant-option {width:100%;text-align:left;color:#e7e8eb;font-size:14px;font-weight:300;background:rgba(255,255,255,.065);border:1px solid rgba(255,255,255,.17);border-radius:13px;margin-top:9px;padding:13px 15px;transition:background .2s}
+
 
 .functions {background:#0d1016}
 .function-grid {display:grid;grid-template-columns:repeat(2,1fr);margin-top:67px;border-top:1px solid var(--hairline)}
