@@ -4,47 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#050505">
-  <meta name="description" content="IO Poster — мобильная Digital Signage платформа: 360° реклама, AI-консультант, навигация и автономная уборка.">
-  <title>IO Poster — Digital Media Robot</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="IOPOSTER.RU — мобильная Digital Signage платформа: 360° реклама, AI-консультант, навигация и автономная уборка.">
+  <title>IOPOSTER.RU — Digital Media Robot</title>
+  <link rel="icon" href="/favicon.ico?v=20261013" sizes="any">
+  <link rel="shortcut icon" href="/favicon.ico?v=20261013">
+  <link rel="stylesheet" href="styles.css?v=mobile-hero-20261013">
+  <link rel="stylesheet" href="mobile.css?v=mobile-proportions-20261013">
 </head>
 <body>
   <header class="topbar">
-    <a class="logo" href="#top"><span>IO</span> POSTER</a>
-    <nav>
+    <a class="logo brand-logo" href="#top" aria-label="IOPOSTER.RU">IOPOSTER.RU</a>
+    <nav id="site-nav" aria-label="Разделы сайта">
       <a href="#product">Продукт</a>
       <a href="#functions">Функции</a>
       <a href="#specs">Характеристики</a>
       <a href="#platform">Платформа</a>
+      <a href="#investors">Инвесторам</a>
+      <a class="mobile-pilot" href="#pilot">Обсудить пилот</a>
     </nav>
     <a class="pill" href="#pilot">Обсудить пилот</a>
+    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Открыть меню" title="Меню"><span class="menu-open-icon" aria-hidden="true">&#9776;</span><span class="menu-close-icon" aria-hidden="true">&#215;</span></button>
   </header>
 
   <main id="top">
     <section class="hero">
+      <img class="hero-photo" src="images/ioledposter-product.png" alt="Робот IOPOSTER.RU с горным пейзажем на LED-экранах" width="1672" height="941" fetchpriority="high">
       <div class="hero-copy reveal">
-        <div class="kicker">DIGITAL MEDIA ROBOT</div>
         <h1>Реклама, которая<br><em>движется к аудитории.</em></h1>
         <p>360° Digital Signage, AI‑консультант, навигация и автономная уборка — в одном мобильном устройстве.</p>
         <div class="actions">
           <a class="btn light" href="#product">Смотреть продукт</a>
           <a class="btn ghost" href="#specs">Характеристики</a>
-        </div>
-      </div>
-      <div class="hero-product reveal delay">
-        <div class="person"><i></i><b></b><small>1800 мм</small></div>
-        <div class="pylon pylon-large">
-          <div class="cap"><span></span></div>
-          <div class="screen">
-            <div class="screen-glow"></div>
-            <div class="screen-logo">IO POSTER</div>
-            <div class="screen-copy">AI · MEDIA<br>ROBOT</div>
-            <div class="mountain"></div>
-          </div>
-          <div class="base">
-            <div class="sensor"></div><div class="led"></div>
-            <span class="brush l"></span><span class="brush r"></span>
-          </div>
+          <a class="btn ghost" href="#investors">Инвесторам</a>
         </div>
       </div>
       <div class="hero-meta">
@@ -57,7 +48,7 @@
     <section class="intro" id="product">
       <div class="kicker reveal">ОДИН ОБЪЕКТ. ТРИ СИСТЕМЫ.</div>
       <h2 class="reveal">Медиа. AI.<br>Робототехника.</h2>
-      <p class="intro-lead reveal">IO Poster превращает рекламный носитель в активный элемент пространства: показывает контент, общается с посетителями и автономно перемещается по объекту.</p>
+      <p class="intro-lead reveal">IOPOSTER.RU превращает рекламный носитель в активный элемент пространства: показывает контент, общается с посетителями и автономно перемещается по объекту.</p>
       <div class="triple">
         <article class="reveal"><span>01</span><h3>Digital Media</h3><p>Четырёхсторонний LED‑экран для рекламы, навигации, акций и динамического контента.</p></article>
         <article class="reveal"><span>02</span><h3>AI Interaction</h3><p>Голосовой консультант, поиск товаров, рекомендации и персональные сценарии коммуникации.</p></article>
@@ -85,7 +76,7 @@
       <div class="ai-copy reveal">
         <div class="kicker dark">AI‑КОНСУЛЬТАНТ</div>
         <h2>Разговор вместо<br>поиска по меню.</h2>
-        <p>Посетитель просто задаёт вопрос. IO Poster помогает найти магазин, товар, акцию, ресторан или сервис и показывает дальнейший маршрут.</p>
+        <p>Посетитель просто задаёт вопрос. IOPOSTER.RU помогает найти магазин, товар, акцию, ресторан или сервис и показывает дальнейший маршрут.</p>
         <div class="rows">
           <div><b>01</b><span><strong>Голосовой диалог</strong>Естественное общение без сложного интерфейса.</span></div>
           <div><b>02</b><span><strong>Мультиязычность</strong>Сценарии для международной аудитории.</span></div>
@@ -124,16 +115,10 @@
         <div><div class="kicker dark">ENGINEERED TO FIT</div><h2>Точные пропорции.<br>Без лишнего объёма.</h2></div>
         <p>Экран и робот формируют единый корпус 640 × 640 мм, заподлицо — без ступеней, щелей и промежуточных секций.</p>
       </div>
-      <div class="spec-body">
-        <div class="technical reveal">
-          <div class="measure width">640 мм</div>
-          <div class="tech-pylon">
-            <div class="tech-cap">40</div>
-            <div class="tech-screen">1520</div>
-            <div class="tech-base">360</div>
-          </div>
-          <div class="measure height">1920 мм</div>
-        </div>
+      <a class="assembly-photo reveal" href="images/ioledposter-assembly.png" target="_blank" rel="noopener" aria-label="Открыть схему сборки IOPOSTER.RU">
+        <img src="images/ioledposter-assembly.png" alt="Взрывная схема IOPOSTER.RU: LED-панели, камеры, электроника, питание, привод и модуль уборки" width="1672" height="941" loading="lazy">
+      </a>
+      <div class="spec-body spec-body-images">
         <div class="numbers">
           <div><strong>640 × 640</strong><span>мм основание</span></div>
           <div><strong>1920</strong><span>мм общая высота</span></div>
@@ -161,6 +146,20 @@
       </div>
     </section>
 
+    <section class="investors" id="investors">
+      <div class="investors-copy reveal">
+        <div class="kicker">INVESTOR MODEL</div>
+        <h2>Модель дохода<br>для инвесторов.</h2>
+        <p>IOPOSTER.RU можно монетизировать через продажу устройств, аренду и рекламное размещение по всей сети IOPOSTER.RU.</p>
+      </div>
+      <div class="investor-grid">
+        <article class="reveal"><span>01</span><h3>Устройство и цена</h3><p>Инвестиция начинается с покупки устройства IOPOSTER.RU. Стоимость фиксируется в коммерческом предложении под выбранную конфигурацию и объём партии.</p></article>
+        <article class="reveal"><span>02</span><h3>Доход с продажи</h3><p>Ориентир дохода с продажи одного устройства — <strong>300&nbsp;000 ₽</strong>.</p></article>
+        <article class="reveal"><span>03</span><h3>Доход от аренды</h3><p>Потенциальный доход от сдачи устройства в аренду — <strong>от 50&nbsp;000 до 450&nbsp;000 ₽</strong>.</p></article>
+        <article class="reveal"><span>04</span><h3>Доход с сети IOPOSTER.RU</h3><p>Дополнительный доход от размещения рекламы по всей сети IOPOSTER.RU — <strong>25–30%</strong>.</p></article>
+      </div>
+    </section>
+
     <section class="pilot" id="pilot">
       <div class="pilot-orb"></div>
       <div class="pilot-copy reveal">
@@ -172,7 +171,7 @@
     </section>
   </main>
 
-  <footer><a class="logo" href="#top"><span>IO</span> POSTER</a><p>Digital Media Robot by LEDSouz</p><p>© 2026</p></footer>
-  <script src="script.js"></script>
+  <footer><a class="logo brand-logo" href="#top" aria-label="IOPOSTER.RU">IOPOSTER.RU</a><p>Digital Media Robot by LEDSouz</p><p>© 2026</p></footer>
+  <script src="script.js?v=mobile-hero-20261013"></script>
 </body>
 </html>
