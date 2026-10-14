@@ -9,7 +9,7 @@
   <title>IOPOSTER.RU — Реклама больше не стоит на месте</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
   <link rel="icon" href="/favicon.ico?v=20261013" sizes="any">
   <link rel="shortcut icon" href="/favicon.ico?v=20261013">
   <link rel="stylesheet" href="styles.css?v=git-20261013-r1">
@@ -17,7 +17,7 @@
 </head>
 <body>
   <header class="topbar" id="site-header">
-    <a class="logo" href="#top" aria-label="IOPOSTER.RU — на главную">IOPOSTER.RU</a>
+    <a class="logo brand" href="#top" aria-label="IoPoster — на главную"><span class="brand-mark" aria-hidden="true"></span><span class="brand-wordmark">IoPoster</span></a>
     <nav class="site-nav" id="primary-menu" aria-label="Основная навигация">
       <a href="#product">Продукт</a>
       <a href="#functions">Возможности</a>
@@ -26,9 +26,16 @@
       <a href="#investors">Инвесторам</a>
       <a href="#pilot">Контакты</a>
     </nav>
-    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="primary-menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Выбор языка">
+        <button class="lang active" data-lang="ru" type="button" aria-pressed="true">RU</button>
+        <button class="lang" data-lang="en" type="button" aria-pressed="false">EN</button>
+        <button class="lang" data-lang="zh" type="button" aria-pressed="false">中文</button>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="primary-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <main id="top">
@@ -170,7 +177,8 @@
     </section>
   </main>
 
-  <footer><a class="logo" href="#top">IOPOSTER.RU</a><p>Digital Media Robot by LEDSouz</p><p>© 2026</p></footer>
+  <footer><a class="logo brand" href="#top"><span class="brand-mark" aria-hidden="true"></span><span class="brand-wordmark">IoPoster</span></a><p>Digital Media Robot by LEDSouz</p><p>© 2026</p></footer>
   <script src="script.js?v=git-20261013-r1"></script>
+  <script src="i18n.js?v=git-20261014-r1"></script>
 </body>
 </html>
